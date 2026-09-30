@@ -12,4 +12,7 @@ public static class Precios
 
     public static decimal Impuesto(decimal subtotal) =>
         Math.Round(subtotal * Itbis, 2);
+
+    public static decimal Descuento(decimal subtotal) =>
+        subtotal >= MontoMinimoDescuento ? Math.Round(subtotal * 10m / 100m, 2) : 0m;
 }
