@@ -12,7 +12,7 @@ public static class Pruebas
     {
         var casos = new List<(string Nombre, bool Paso)>
         {
-            ("El subtotal suma cantidad por precio", Precios.CalcularSubtotal(Compra) == 1540m),
+            ("El subtotal suma cantidad por precio", Precios.Subtotal(Compra) == 1540m),
             ("El ITBIS es el 18 % del subtotal", Precios.Impuesto(100m) == 18m),
             ("El resumen muestra el total", Reporte.Resumen(Compra).Contains("Total")),
         };
