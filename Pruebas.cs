@@ -17,6 +17,9 @@ public static class Pruebas
             ("El resumen muestra el total", Reporte.Resumen(Compra).Contains("Total")),
             ("Descuento del 10 % en compras grandes", Precios.Descuento(20000m) == 2000m),
             ("Sin descuento en compras pequeñas", Precios.Descuento(100m) == 0m),
+            ("Envío de 150 por debajo de 3000", Precios.CargoEnvio(100m) == 150m),
+            ("Envío gratis desde 3000", Precios.CargoEnvio(3000m) == 0m),
+            ("El resumen con envío muestra el envío", Reporte.ResumenConEnvio(Compra).Contains("Envío")),
         };
 
         int fallas = 0;
