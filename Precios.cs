@@ -15,4 +15,7 @@ public static class Precios
 
     public static decimal Descuento(decimal subtotal) =>
         subtotal >= MontoMinimoDescuento ? Math.Round(subtotal * 10m / 100m, 2) : 0m;
+        
+    public static decimal CargoEnvio(decimal subtotal) =>
+        subtotal >= 3000m ? 0m : 150m;
 }
