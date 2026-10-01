@@ -2,7 +2,7 @@ namespace Colmado;
 
 public static class Precios
 {
-    public const decimal MontoMinimoDescuento = 2000m;
+    public const decimal MontoMinimoDescuento = 1500;
 
     public const decimal Itbis = 0.18m;
 
