@@ -12,4 +12,7 @@ public static class Precios
 
     public static decimal Impuesto(decimal subtotal) =>
         Math.Round(subtotal * Itbis, 2);
+
+    public static decimal CargoEnvio(decimal subtotal) =>
+        subtotal >= 3000m ? 0m : 150m;
 }
