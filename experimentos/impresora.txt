@@ -1,0 +1,2 @@
+Prueba de impresora térmica de 58 mm
+Ancho: 32 caracteres
