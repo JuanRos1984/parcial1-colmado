@@ -1,0 +1,10 @@
+# Secretos: claves y variables de entorno
+.env
+
+# Archivos generados por dotnet build
+bin/
+obj/
+
+# Archivos locales del IDE
+.vs/
+*.user
