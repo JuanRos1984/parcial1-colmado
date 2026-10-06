@@ -1,0 +1,6 @@
+# Salida de la compilación
+bin/
+obj/
+
+# Secretos locales
+.env
