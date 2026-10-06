@@ -11,7 +11,7 @@ public static class Reporte
 
     public static string ResumenConEnvio(List<Linea> lineas)
     {
-        var subtotal = Precios.CalcularSubtotal(lineas);
+        var subtotal = Precios.Subtotal(lineas);
         return $"{Resumen(lineas)} | Envío: {Precios.CargoEnvio(subtotal):N2}";
     }
 }
